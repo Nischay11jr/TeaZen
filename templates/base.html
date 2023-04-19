@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>TeaZen</title>
+    <link rel="icon" href="{{ url_for('static', filename = 'teazenfavicon.png') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'styles.css') }}" />
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li>
+                <h4><img src="{{ url_for('static', filename = 'logo1.png') }}"></h4>
+            </li>
+            <li>
+                <h4><a href="{{ url_for('home') }}">Home</a></h4>
+            </li>
+            <li>
+                <h4><a href="{{ url_for('teas') }}">Shop</a></h4>
+            </li>
+            <li>
+                <h4><a href="{{ url_for('about') }}">About</a></h4>
+            </li>
+            <li>
+                <h4><a href="{{ url_for('journal') }}">Journal</a></h4>
+            </li>
+            <li>
+                <h4><a href="{{ url_for('review') }}">Review</a></h4>
+            </li>
+            <li>
+                {% if g.user %}
+            <li>
+                <p>Hello, {{g.user }}</p>
+            </li>
+            <li>
+                <p><a href="{{ url_for('logout') }}">Logout</a></p>
+            </li>
+            <li>
+                <p><a href="{{ url_for('cart') }}"><img src="{{ url_for('static', filename = 'carticon.png') }}"></a>
+                </p>
+            </li>
+            {% else %}
+            <li>
+                <p><a href="{{ url_for('register') }}">Sign In</a></p>
+            </li>
+            <li>
+                <p><a href="{{ url_for('login') }}">Log In</a></p>
+            </li>
+            <li>
+                <p><a href="{{ url_for('cart') }}"><img src="{{ url_for('static', filename = 'carticon.png') }}"></a>
+                </p>
+            </li>
+            {% endif %}
+            </li>
+        </ul>
+    </nav>
+
+    {% block main_content %}
+    {% endblock %}
+    <footer>
+
+        <section class="myaccount">
+            <h4>My Account</h4>
+
+            {% if g.user %}
+            <p>Hello, {{ g.user }}</p>
+            <p><a href="{{ url_for('cart') }}">My Cart</a></p>
+            <p><a href="{{ url_for('logout') }}">Logout</a></p>
+            {% else %}
+            <p><a href="{{ url_for('register') }}">Sign In</a></p>
+            <p><a href="{{ url_for('login') }}">Log In</a></p>
+            {% endif %}
+        </section>
+
+        <section class="contactus">
+            <h4>Contact Us</h4>
+            <p>College Rd, University College Cork</p>
+            <p>+353 XXXXXXXX</p>
+            <p>+353 XXXXXXXX</p>
+            <p>office@teazone.ie</p>
+        </section>
+
+        <section class="rights">
+            <p>
+                &copy; TeaZen. All rights reserved.
+            </p>
+            <p>
+                <a href="https://www.uccsu.ie/can-we-help/education/plagerism-policy/#toggle-id-1">Plagiarism Policy</a>
+            </p>
+
+            <p>
+                <a href="https://www.ucc.ie/en/legal/">Legal Policy</a>
+            </p>
+
+            <p>
+                <a href="https://www.gov.ie/en/publication/8994a-national-cyber-security-strategy/#">Security</a>
+            </p>
+        </section>
+
+        <section class="socials">
+            <h4>Follow Us</h4>
+            <figure>
+                <img src="{{ url_for('static', filename = 'youtubeicon.png') }}">
+            </figure>
+
+            <figure>
+                <img src="{{ url_for('static', filename = 'fbicon.png') }}">
+            </figure>
+
+            <figure>
+                <img src="{{ url_for('static', filename = 'igicon.png') }}">
+            </figure>
+
+            <figure>
+                <img src="{{ url_for('static', filename = 'twittericon.png') }}">
+            </figure>
+
+        </section>
+        <br>
+        <p>Images were taken from <a href="https://www.canva.com">Canva</a> and <a href="https://unsplash.com/">Unsplash</a></p>
+    </footer>
+</body>
+
+</html>

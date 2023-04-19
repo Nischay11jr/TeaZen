@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block main_content %}
+<section class="review">
+    <section class="reviewhead">
+        <h2>Share your experience!</h2>
+    </section>
+
+
+    <form class="form" method="POST" action=" " novalidate>
+        {{ form.hidden_tag() }}
+        {{ form.review.label() }}
+        {{ form.review() }}
+
+        {% for error in form.review.error %}
+        {{ error }}
+        {% endfor %}
+
+        <br>
+
+        {{ form.stars.label() }}
+        {{ form.stars() }}
+
+        <br>
+
+        {{ form.submit() }}
+    </form>
+</section>
+{% endblock %}

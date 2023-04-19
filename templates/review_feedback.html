@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block main_content %}
+<h2>{{ message }}</h2>
+
+<section class="form">
+    <h3>Another Review?</h3>
+    <form class="form" method="POST" action=" " novalidate>
+        {{ form.hidden_tag() }}
+        {{ form.review.label() }}
+        {{ form.review() }}
+
+        {% for error in form.review.error %}
+        {{ error }}
+        {% endfor %}
+
+        <br>
+
+        {{ form.stars.label() }}
+        {{ form.stars() }}
+
+        <br>
+
+        {{ form.submit() }}
+    </form>
+</section>
+
+<a href="{{ url_for('home') }}">Back to Home page</a>
+{% endblock %}

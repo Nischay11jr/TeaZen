@@ -1,0 +1,128 @@
+{% extends "base.html" %}
+
+{% block main_content %}
+<header>
+    <h1><span class="itis">IT'S ALWAYS</span> TEA TIME</h1>
+    <h3><span class="elevate">ELEVATE</span> YOUR DAY WITH <span class="elevate">TEA</span>ZEN TEA</h3>
+    <figure>
+        <a href="{{ url_for('teas') }}"><img src="{{ url_for('static', filename = 'shopnowicon.png') }}"></a>
+    </figure>
+</header>
+
+
+<section class="bestsellers">
+    <h1>Best Sellers</h1>
+    <section class="besteas">
+        <section class="greenharmony">
+            <figure>
+                <img src="{{ url_for('static', filename = 'greenharmony.png') }}">
+            </figure>
+            <p><a href="{{ url_for('teas') }}">Green Harmony</a></p>
+            <p>€7.99</p>
+        </section>
+
+        <section class="serene">
+            <figure>
+                <img src="{{ url_for('static', filename = 'serenerooibos.png') }}">
+            </figure>
+            <p><a href="{{ url_for('teas') }}">Serene Rooibos</a></p>
+            <p>€7.79</p>
+        </section>
+
+        <section class="spicedchai">
+            <figure>
+                <img src="{{ url_for('static', filename = 'spicedchai.png') }}">
+            </figure>
+            <p><a href="{{ url_for('teas') }}">Spiced Chai</a></p>
+            <p>€8.79</p>
+        </section>
+
+        <section class="citrussunrise">
+            <figure>
+                <img src="{{ url_for('static', filename = 'citrussunrise.png') }}">
+            </figure>
+            <p><a href="{{ url_for('teas') }}">Citrus Sunrise</a></p>
+            <p>€6.79</p>
+        </section>
+    </section>
+</section>
+
+
+<section class="discount">
+    <figure>
+        <img src="{{ url_for('static', filename = 'discount.png') }}">
+    </figure>
+    <section class="clickhere">
+        {% if g.user %}
+        <a href="{{ url_for('teas') }}"><img src="{{ url_for('static', filename = 'clickhere.png') }}"></a>
+        {% else %}
+        <a href="{{ url_for('register') }}"><img src="{{ url_for('static', filename = 'clickhere.png') }}"></a>
+        {% endif %}
+    </section>
+</section>
+
+<section class="collection">
+    <h1>Discover Our New Tea Collection</h1>
+    <section class="teacollection">
+        <section class="pr">
+            <figure>
+                <img src="{{ url_for('static', filename = 'persianrose.png') }}">
+            </figure>
+            <p><a href="{{ url_for('teas') }}">Persian Rose</a></p>
+            <p>€8.99</p>
+        </section>
+
+        <section class="pr1">
+            <figure>
+                <img src="{{ url_for('static', filename = 'persianrose1.png') }}">
+            </figure>
+            <p><a href="{{ url_for('teas') }}">Love Potion</a></p>
+            <p>€8.99</p>
+        </section>
+
+        <section class="pr2">
+            <figure>
+                <img src="{{ url_for('static', filename = 'persianrose2.png') }}">
+            </figure>
+            <p><a href="{{ url_for('teas') }}">Oasis Mirage</a></p>
+            <p>€8.99</p>
+        </section>
+    </section>
+    <section class="message">
+        <h2>ELEVATE YOUR SENSES WITH TEAZEN TEA</h2>
+        <figure>
+            {% if g.user %}
+            <a href="{{ url_for('teas') }}"><img src="{{ url_for('static', filename = 'shopnowicon.png') }}"></a>
+            {% else %}
+            <a href="{{ url_for('register') }}"><img src="{{url_for('static', filename = 'shopnowicon.png') }}"></a>
+            {% endif %}
+        </figure>
+    </section>
+</section>
+
+<section class="quote">
+    <figure>
+        <a href="{{ url_for('teas') }}"><img src="{{ url_for('static', filename = 'quotebanner.png') }}"></a>
+    </figure>
+</section>
+
+<section class="partner">
+    <h2>Our Partners</h2>
+    <figure>
+        <img src="{{ url_for('static', filename = 'zian.png') }}">
+    </figure>
+
+    <figure>
+        <img src="{{ url_for('static', filename = 'setivo.png') }}">
+    </figure>
+
+    <figure>
+        <img src="{{ url_for('static', filename = 'zaira.png') }}">
+    </figure>
+
+    <figure>
+        <img src="{{ url_for('static', filename = 'pepo.png') }}">
+    </figure>
+</section>
+
+{% endblock %}

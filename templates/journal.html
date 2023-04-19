@@ -1,0 +1,195 @@
+{% extends "base.html" %}
+
+{% block main_content %}
+<section class="journalhead">
+    <h2>OUR JOURNAL</h2>
+</section>
+
+<section class="journal">
+    <!-- 1 -->
+    <section class="recipes">
+        <section class="greentea">
+            <h2>Green Tea Cooler</h2>
+            <figure>
+                <img src="{{ url_for('static', filename = 'green tea cooler.jpg') }}">
+            </figure>
+            <h3>Ingredients</h3>
+            <ul>
+                <li>4-5 teaspoons of Pure Zen green tea</li>
+                <li>4 cups of hot water</li>
+                <li>Ice cubes</li>
+                <li>Fresh mint leaves and lemon slices for garnish (optional)</li>
+            </ul>
+
+            <h3>Instructions</h3>
+            <ol>
+                <li>Boil 4 cups of water in a kettle or saucepan.</li>
+                <li>Add 4-5 teaspoons of Pure Zen green tea to a tea infuser or a tea strainer.</li>
+                <li>Place the tea infuser or strainer in a heat-resistant pitcher.</li>
+                <li>Pour the hot water over the tea leaves and steep for 5 minutes.</li>
+                <li>Remove the tea infuser or strainer and let the tea cool to room temperature.</li>
+                <li>Fill a glass with ice cubes.</li>
+                <li>Pour the cooled Pure Zen tea over the ice.</li>
+                <li>Garnish with fresh mint leaves and lemon slices, if desired.</li>
+                <li>Stir and enjoy your refreshing Pure Zen iced tea!</li>
+            </ol>
+        </section>
+
+        <!-- #2 -->
+        <section class="serenesummer">
+            <h2>Serene Summer Sipper</h2>
+            <figure>
+                <img src="{{ url_for('static', filename = 'serene summer.jpg') }}">
+            </figure>
+            <h3>Ingredients</h3>
+            <ul>
+                <li>2 teaspoons of Green Harmony tea</li>
+                <li>1 cup of packed fresh spinach leaves</li>
+                <li>1 cup of frozen mango chunks</li>
+                <li>1/2 cup of canned or fresh coconut milk</li>
+                <li>1 tablespoon of honey or other sweetener (optional)</li>
+            </ul>
+
+            <h3>Instructions</h3>
+            <ol>
+                <li>Steep the Green Harmony tea in 1 cup of hot water for 5 minutes. Strain the tea and let it cool to
+                    room
+                    temperature.</li>
+                <li>Add the cooled tea to a blender with the spinach leaves, frozen mango chunks, coconut milk, and
+                    honey
+                    (if
+                    using).</li>
+                <li>Blend the ingredients on high speed until smooth and creamy. If the smoothie is too thick, add a
+                    little
+                    more
+                    coconut milk or water.</li>
+                <li>Pour the smoothie into a glass and serve immediately.</li>
+            </ol>
+        </section>
+
+
+        <!-- 3 -->
+        <section class="enchantedlatte">
+            <h2>Enchanted Forest Matcha Latte</h2>
+            <figure>
+                <img src="{{ url_for('static', filename = 'enchanted.jpg') }}">
+            </figure>
+            <h3>Ingredients</h3>
+            <ul>
+                <li>1 teaspoon of Green Harmony tea</li>
+                <li>1/4 cup of hot water</li>
+                <li>1 teaspoon of matcha powder</li>
+                <li>1 cup of milk</li>
+                <li>Sweetener, such as honey or agave nectar, to taste (optional)</li>
+            </ul>
+
+            <h3>Instructions</h3>
+            <ol>
+                <li>Steep the Green Harmony tea in 1/2 cup of hot water for 5 minutes. Strain the tea and let it cool to
+                    room
+                    temperature.</li>
+                <li>In a small bowl, whisk together the Green Harmony matcha powder and 1/4 cup of hot water until
+                    frothy.
+                </li>
+                <li>In a small saucepan, heat the milk over medium heat until hot but not boiling.</li>
+                <li>Pour the Green Harmony tea and the frothed matcha mixture into the saucepan with the hot milk, and
+                    whisk
+                    until well combined.</li>
+                <li>Add sweetener to taste, if desired.</li>
+                <li>Pour the latte into a mug and serve hot.</li>
+            </ol>
+        </section>
+
+        <!-- 4 -->
+        <section class="halcyon">
+            <h2>Halcyon Vanilla Latte</h2>
+            <figure>
+                <img src="{{ url_for('static', filename = 'halcyon latte.jpg') }}">
+            </figure>
+            <h3>Ingredients</h3>
+            <ul>
+                <li>1 tablespoon of Serene Rooibos tea</li>
+                <li>1/2 cup of water</li>
+                <li>1/2 cup of milk (dairy or non-dairy)</li>
+                <li>1/2 teaspoon of vanilla extract</li>
+                <li>Honey or sweetener (optional)</li>
+            </ul>
+
+
+            <h3>Instructions</h3>
+            <ol>
+                <li>Boil 1/2 cup of water in a kettle or pot.</li>
+                <li>Add 1 tablespoon of Serene Rooibos tea to a tea infuser or teapot.</li>
+                <li>Pour the hot water over the tea and let it steep for 5-7 minutes.</li>
+                <li>Remove the tea infuser or strain the tea leaves.</li>
+                <li>In a small saucepan, heat the milk over medium heat until hot but not boiling.</li>
+                <li>Add the vanilla extract to the hot milk and stir to combine.</li>
+                <li>Pour the brewed Serene Rooibos tea into a mug.</li>
+                <li>Pour the hot milk mixture over the tea.</li>
+                <li>Add honey or sweetener to taste, if desired.</li>
+                <li>Stir the latte and enjoy the creamy and soothing Halcyon Vanilla Latte.</li>
+            </ol>
+        </section>
+        <!-- 5 -->
+        <section class="sencha">
+            <h2>Sencha Lemonade</h2>
+            <figure>
+                <img src="{{ url_for('static', filename = 'sencha lemonade.jpg') }}">
+            </figure>
+
+            <h3>Ingredients</h3>
+            <ul>
+                <li>4-5 sencha green tea bags or 2-3 teaspoons of loose sencha green tea leaves</li>
+                <li>4 cups of water</li>
+                <li>1/2 cup freshly squeezed lemon juice</li>
+                <li>1/4 cup honey or sugar, or more to taste</li>
+                <li>Ice cubes</li>
+                <li>Lemon slices and fresh mint leaves for garnish</li>
+            </ul>
+
+            <h3>Instructions</h3>
+            <ol>
+                <li>In a medium saucepan, bring the water to a boil over high heat.</li>
+                <li>Remove from heat and add the sencha green tea bags or loose sencha green tea leaves to the water.
+                    Steep
+                    for
+                    3-5 minutes or until desired strength is achieved.</li>
+                <li>Remove the tea bags or strain the tea leaves and let the tea cool to room temperature.</li>
+                <li>In a large pitcher, combine the cooled sencha green tea, lemon juice, and honey or sugar. Stir well
+                    to
+                    combine.</li>
+                <li>Add ice cubes to the pitcher and stir again.</li>
+                <li>Serve the sencha lemonade over ice with lemon slices and fresh mint leaves for garnish.</li>
+            </ol>
+        </section>
+
+        <section class="persianicedtea">
+            <h2>Persian Iced Tea</h2>
+            <figure>
+                <img src="{{ url_for('static', filename = 'persianicedtea.jpg') }}">
+            </figure>
+            <h3>Ingredients</h3>
+            <ul>
+                <li>4 bags of Persian Rose tea</li>
+                <li>4 cups water</li>
+                <li>1/4 cup honey</li>
+                <li>1/4 cup freshly squeezed lemon juice</li>
+                <li>1/4 cup pomegranate juice</li>
+                <li>Ice cubes</li>
+                <li>Fresh mint leaves, for garnish (optional)</li>
+            </ul>
+
+            <h3>Instructions</h3>
+            <ol>
+                <li>In a large pitcher, brew the tea bags with 4 cups of boiling water for 5-7 minutes, or until the tea
+                    is strong and fragrant.</li>
+                <li>Remove the tea bags and stir in the honey, lemon juice, and pomegranate juice until well combined.
+                </li>
+                <li>Chill the mixture in the refrigerator for at least 1 hour.</li>
+                <li>Serve the tea over ice cubes and garnish with fresh mint leaves (if desired).</li>
+            </ol>
+        </section>
+    </section>
+</section>
+
+{% endblock %}

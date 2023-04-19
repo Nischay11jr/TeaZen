@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block main_content %}
+<h1 class="carthead">Your cart</h1>
+<section class="cart">
+    {% if cart %}
+    <section class="cartmain">
+        <section class="cartitems">
+            <ul>
+                {% for tea_id in cart %}
+                <li>{{ names[tea_id] }}
+                    <form method="POST" action="" novalidate>
+                        {{ form.hidden_tag() }}
+                        {{ form.quantity.label() }}
+                        {{ form.quantity() }}
+                    </form>
+                </li>
+                {% endfor %}
+            </ul>
+        </section>
+        <section class="ordersum">
+            <h3>Order Summary</h3>
+            <p>Price = €{{ total }}</p>
+            <p>Shipping charges = €0.00</p>
+            <hr>
+            <p>Subtotal = €{{ total }}</p>
+        </section>
+    </section>
+    {% else %}
+    <p>Your cart is empty.</p>
+    {% endif %}
+
+</section>
+{% endblock %}

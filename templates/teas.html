@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block main_content %}
+<section class="teahead">
+    <h1>OUR INVENTORY</h1>
+</section>
+<section class="teacontent">
+    <p>At TeaZen, we believe that a great cup of tea can change your day. Explore our selection of premium
+        loose-leaf
+        teas, tea accessories, and more. We're committed to bringing you the highest quality teas and accessories
+        from
+        around the world, and we pride ourselves on our expert knowledge and exceptional customer service. Sip,
+        relax,
+        and enjoy. At TeaZen, we're all about taking a moment for yourself and enjoying the simple pleasures in
+        life.
+    </p>
+</section>
+
+<section class="products">
+    {% for tea in teas %}
+    <section class="product">
+        <a href="{{ url_for('tea', tea_id = tea['tea_id']) }}"><img
+                src="{{ url_for('static', filename = tea['images']) }}" /></a>
+        <h3>{{ tea["name"] }}</h3>
+        <p>€{{ tea["price"] }}</p>
+    </section>
+    {% endfor %}
+</section>
+{% endblock %}

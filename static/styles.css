@@ -1,0 +1,568 @@
+.html{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    text-align: right;
+    padding-top: 3em;
+    padding-bottom: 2em;
+    padding-right: 2em;
+    background-image: url("headerbg.png");
+    background-size:cover;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+  
+header img {
+    float: right;
+    justify-content: left;
+    width: auto;
+    height: 50px;
+    margin-right: 10px; 
+    padding-right: 5em;
+    padding-bottom: 8em;
+}
+  
+header h1 {
+    font-size: 50px;
+    font-weight: bolder;
+    display: inline-block;
+    color: #00BF63;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.itis{
+    color: #50453D;
+}
+
+.elevate, .pure{
+    color: #00BF63;
+}
+
+header h3{
+    display: block;
+    color: #50453D;
+    font-size: 30px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+h2{
+    text-align: center;
+}
+
+p{
+    color: #00BF63;
+    font-weight: bold;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: lighter;
+
+}
+
+body {
+    background-image: url("background2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+}
+
+/* landing pages nav lists */
+nav ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    background-color: #C7CBD8;
+    color: #50453D;
+
+}
+  
+nav li {
+    display: inline-block;
+}
+  
+nav a {
+    display: block;
+    padding-right: 10px;
+    font-size: 17px;
+}
+
+nav img{
+    width: 100%;
+    height: 55px;
+}
+
+
+
+
+
+/* MAIN PAGE BEST SELLERS */
+
+.bestsellers, .collection{
+    background-color: #F5F7F7;
+    padding-top: 7em;
+    padding-bottom: 8em;
+}
+
+.bestsellers h1, .collection h1{
+    font-size: 45px;
+    text-align: center;
+    color: #50453D;
+
+}
+
+.bestsellers .besteas, .collection .teacollection{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.besteas p, .pr p, .pr1 p, .pr2 p{
+    text-align: center;
+}
+
+.besteas figure img, .collection figure img{
+    width: 100%;
+    height: 250px;
+}
+
+
+.discount{
+    padding-left: 1.2em;
+    margin-bottom: 5em;
+    background-color: #F5F7F7;
+}
+
+.clickhere img{
+    float: right;
+    padding-right: 25em;
+    width: auto;
+    height: 50px;
+}
+
+.message{
+    padding-top: 2em;
+}
+
+.message h2{
+    font-size: 35px;
+    color: #50453D;
+}
+
+.message figure img{
+    float: right;
+    padding-right: 33em;
+    width: auto;
+    height: 50px;
+}
+
+
+.quote figure img{
+    width: 100%;
+    height: 400px;
+    
+}
+
+.partner{
+    background-color: #F5F7F7;
+}
+
+.partner h2{
+    color: #50453D;
+    font-size: 45px;
+    padding-top: 1.5em;
+    padding-bottom: 0.7em;
+    margin-bottom: 20px;
+}
+
+.partner figure {
+    display: inline-block;
+    width: 20%;
+    margin: 0 2%;
+    padding-bottom: 5em;
+}
+  
+.partner figure img{
+    max-width: 100%;
+}
+
+
+
+/* TEA PAGE */
+.teahead{
+    text-align: center;
+    padding-top: 3em;
+    padding-bottom: 2em;
+    padding-right: 1em;
+    background-image: url("headerbg.png");
+    background-size:cover;
+    font-size: 50px;
+    color: #50453D;
+}
+
+.teacontent{
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+
+.teacontent p{
+    font-size: 20px;
+}
+
+.products{
+    background-color:#F5F7F7 ;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.products table{
+    padding-bottom: 3em;
+}
+
+.product{
+    padding: 1.25em;
+    text-align: center;
+}
+
+.product img{
+    width: 75%;
+    height: 350px;
+}
+
+.product h3{
+    margin-bottom: 1em;
+}
+
+.instock{
+    color: black;
+}
+
+.addtocart{
+    text-align: center;
+}
+
+.tea h1{
+    color:#50453D;
+    font-size: 40px;
+}
+
+
+
+/* ABOUT US PAGE */
+.abouthead{
+    background-image: url("headerbg.png");
+    background-size: cover;
+    padding-top: 3em;
+    padding-bottom: 2em;
+    margin-bottom: 3em;
+    font-size: 50px;
+}
+
+.abouthead h1{
+    text-align: center;
+    color: #50453D;
+}
+
+.aboutmain h2{
+    color: #50453D;
+    font-size: 35px;
+    padding-top: 0.5em;
+    text-decoration: underline;
+}
+
+.aboutmain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.aboutcontent {
+    display: flex;
+    justify-content: center;
+}
+
+.aboutcontent figure {
+    margin-right: 20px;
+}
+
+
+.aboutmain p {
+    margin-top: 20px;
+    padding-top: 1.5em;
+    font-size: 20px;
+}
+
+
+
+
+
+
+/* JOURNAL PAGE */
+.journal ul li, .journal ol li{
+    font-size: 20px;
+}
+
+.journalhead{
+    background-image: url("headerbg.png");
+    background-size: cover;
+    padding-top: 3em;
+    padding-bottom: 2em;
+    margin-bottom: 3em;
+    font-size: 50px;
+}
+
+.journalhead h2{
+    color: #50453D;
+}
+
+.recipes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+
+.recipes > * {
+    grid-column: span 1;
+}
+  
+.greentea, .enchantedlatte {
+    grid-column: 1 / span 2;
+}
+  
+.serenesummer, .halcyon {
+    grid-column: 3 / span 2;
+}
+
+.persianicedtea{
+    grid-column: 3;
+}
+
+.greentea, .serenesummer, .enchantedlatte, .halcyon, .sencha, .persianicedtea{
+    margin-top: 3em;
+    color:#00BF63;
+}
+
+.greentea img, .serenesummer img, .enchantedlatte img, .halcyon img, .sencha img, .persianicedtea img{
+    max-width: 500px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 8em;
+}
+
+.greentea h2,.greentea h3, .serenesummer h2,.serenesummer h3, .enchantedlatte h2,.enchantedlatte h3, .halcyon h2, .halcyon h3, .sencha h2, .sencha h3, .persianicedtea h2, .persianicedtea h3{
+    color: #50453D;
+    font-size: 40px;
+    text-align: center;
+}
+
+
+
+/* REVIEWS PAGE */
+
+.review .reviewhead h2{
+    font-size: 30px;
+    padding-bottom: 2em;
+}
+
+
+
+/* SIGNIN PAGE */
+.signinhead{
+    font-size: 50px;
+    color: #50453D;
+    background-image: url("headerbg.png");
+    background-size: cover;
+    text-align: center;
+    padding: 2em;
+}
+
+
+/* LOGIN PAGE */
+.loginhead{
+    font-size: 50px;
+    color: #50453D;
+    background-image: url("headerbg.png");
+    background-size: cover;
+    text-align: center;
+    padding: 2em;
+}
+
+/* FORMS CSS */
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5em;
+}
+
+.register h2, .login h2{
+    color:#00BF63;
+    font-size: 35px;
+}
+
+label{
+    display: block;
+    margin-bottom: 5px;
+}
+  
+input, select {
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 300px;
+}
+  
+button[type="submit"] {
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+
+
+
+/* CART */
+.carthead{
+    font-size: 45px;
+    color:#50453D;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.cart{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.cartmain {
+    display: flex;
+    margin-bottom: 3em;
+}
+  
+.cartitems{
+    width: 70%;
+    height: auto;
+    margin-right: 20px;
+    overflow-y: auto;
+}
+  
+.ordersum {
+    width: 30%;
+    margin-right: 7em;
+    padding: 2em;
+    border: 3px solid black;
+    height: 250px;
+
+}
+
+.ordersum h3{
+    font-size: 35px;
+    text-align: center;
+}
+
+.ordersum p{
+    text-align: left;
+}
+
+hr{
+    border: none;
+    border-top: 1px solid grey;
+    margin: 10px 0;
+}
+
+
+
+/* links  */
+
+a:link { 
+    color: black;
+}
+
+a:visited{
+    color: black;
+}
+            
+a:hover {
+    color: rgb(203, 247, 43);
+}
+
+
+
+
+
+
+/* footer of every page */
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    background-color: #C7CBD8;
+    padding-bottom: 5em;
+    padding-top: 2em;
+    margin: 0;
+}
+
+footer h4{
+    font-size: 25px;
+}
+  
+.myaccount, .contactus, .socials {
+    display: flex;
+    flex-direction: column;
+    margin-right: 0.7em;
+}
+  
+.socials {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+section.socials h4 {
+    display: block;
+    margin-bottom: 10px; 
+    margin-top: 0;
+  }
+
+.socials + p{
+    text-align: center;
+}
+  
+.socials figure {
+    margin-right: 0.5rem;
+}
+
+.socials figure img{
+    max-width: 100%;
+    height: 50px;
+}
+
+.rights{
+    margin-top: 1.8em;
+}
+  
+footer p {
+    margin: 0;
+    color: black;
+}

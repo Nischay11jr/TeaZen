@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block main_content %}
+<section class="about">
+    <section class="abouthead">
+        <h1>ABOUT US</h1>
+    </section>
+    <section class="aboutmain">
+        <h2>WELCOME TO <span class="pure">TEA</span>ZEN</h2>
+        <section class="aboutcontent">
+            <p>At TeaZen, we understand the power of tea. Founded on the belief that a
+                simple cup of tea can effectively improve your well-being, we source only the
+                best tea leaves and botanicals worldwide to create blends that enhance your daily rituals.
+                From calming and relaxing teas to energizing and invigorating blends, each is carefully
+                crafted with top-quality ingredients for an exceptional taste and aroma. We strive to
+                support local communities and environmental sustainability through ethical sourcing practices.
+                Teazen is the ideal location to indulge your enthusiasm for this traditional and beloved beverage,
+                whether you're a novice or a seasoned tea drinker. 
+            </p>
+
+            <figure>
+                <img src="{{ url_for('static', filename = 'aboutuslogo.png') }}">
+            </figure>
+        </section>
+    </section>
+</section>
+{% endblock %}
